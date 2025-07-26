@@ -7,11 +7,12 @@ import { Barman, WhatsApp } from "./icons";
 
 
 function App() {
-    const [activeTab, setActiveTab] = useState<'bar' | 'photo'>('bar');
+    const [activeTab, setActiveTab] = useState<'bar' | 'photo' | 'both'>('bar');
 
     // Memoize tab handlers to prevent unnecessary re-renders
     const handleBarTabClick = useCallback(() => setActiveTab('bar'), []);
     const handlePhotoTabClick = useCallback(() => setActiveTab('photo'), []);
+    const handleBothTabClick = useCallback(() => setActiveTab('both'), []);
 
     return (
         <div className="bg-neutral-900">
@@ -30,31 +31,50 @@ function App() {
 
                     </div>
 
-                <div className="flex gap-2 w-[300px] md:w-[400px]">
+                <div className="flex flex-col gap-2 w-[350px] md:w-[600px] md:flex-row md:gap-2">
+                    <div className="flex gap-2 md:contents">
+                        <Button 
+                            variant={"secondary"} 
+                            className={`h-24 w-[200px] flex flex-col items-center transition-colors ${
+                                activeTab === 'bar' 
+                                    ? 'bg-sky-400 hover:bg-sky-500' 
+                                    : 'hover:bg-neutral-300'
+                            }`}
+                            onClick={handleBarTabClick}
+                        >
+                            <Barman size={50} />
+                            <div className="text-xl">Bar Mobil</div>
+                        </Button>
+                        <Button 
+                            variant={"secondary"} 
+                            className={`h-24 w-[200px] flex flex-col items-center transition-colors ${
+                                activeTab === 'photo' 
+                                    ? 'bg-sky-400 hover:bg-sky-500' 
+                                    : 'hover:bg-neutral-300'
+                            }`}
+                            onClick={handlePhotoTabClick}
+                        >
+                            <Instagram size={50} />
+                            <div className="text-xl">Cabina Foto</div>
+                        </Button>
+                    </div>
                     <Button 
                         variant={"secondary"} 
-                        className={`h-24 w-[200px] flex flex-col items-center transition-colors ${
-                            activeTab === 'bar' 
+                        className={`h-24 w-full md:w-[200px] flex flex-col items-center transition-colors ${
+                            activeTab === 'both' 
                                 ? 'bg-sky-400 hover:bg-sky-500' 
                                 : 'hover:bg-neutral-300'
                         }`}
-                        onClick={handleBarTabClick}
+                        onClick={handleBothTabClick}
                     >
-                        <Barman size={50} />
-                        <div className="text-xl">Bar Mobil</div>
+                        <div className="text-xl">Bar & Cabina Foto</div>
                     </Button>
-                    <Button 
-                        variant={"secondary"} 
-                        className={`h-24 w-[200px] flex flex-col items-center transition-colors ${
-                            activeTab === 'photo' 
-                                ? 'bg-sky-400 hover:bg-sky-500' 
-                                : 'hover:bg-neutral-300'
-                        }`}
-                        onClick={handlePhotoTabClick}
-                    >
-                        <Instagram size={50} />
-                        <div className="text-xl">Cabina Foto</div>
-                    </Button>
+                </div>
+
+                <div className="max-w-7xl mx-auto mt-8 px-4">
+                    <div className="shadow-md shadow-sky-500/50 text-sky-100 rounded-lg p-2 mb-2 font-semibold text-sm md:text-base text-center">
+                        <div>Transportul în orașul Chișinău este gratuit!</div>
+                    </div>
                 </div>
 
                 {/* Tab Content */}

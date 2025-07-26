@@ -144,6 +144,11 @@ const PriceCard = memo(function PriceCard({ title, totalCocktails, priceMDL, pri
                         <DrawerDescription className="text-center text-neutral-400 text-lg">
                             {totalCocktails} {cake ? "shots" : "cocktails"} • {priceMDL.toLocaleString()} MDL / {priceEUR}€
                         </DrawerDescription>
+                        {!cake && (
+                            <div className="text-center italic text-neutral-200">
+                                Recomandare: pentru început va sugeram câte 2 cocktailuri per persoană.
+                            </div>
+                        )}
                     </DrawerHeader>
                     
                     <div className="p-4 pb-0 max-h-96 overflow-y-auto">

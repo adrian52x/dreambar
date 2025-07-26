@@ -1,10 +1,8 @@
 import { PriceCard } from "./PriceCard";
 import menuData from "../data/menuData.json";
 import { File, Cake } from "lucide-react";
-import { Separator } from "./ui/separator";
-
 interface TabContentProps {
-    activeTab: 'bar' | 'photo';
+    activeTab: 'bar' | 'photo' | 'both';
 }
 
 export function TabContent({ activeTab }: TabContentProps) {
@@ -12,13 +10,6 @@ export function TabContent({ activeTab }: TabContentProps) {
         case 'bar':
             return (
                 <>
-                    <div className="max-w-7xl mx-auto mt-8 px-4">
-                        <div className="shadow-md shadow-sky-500/50 text-sky-100 rounded-lg p-2 mb-2 font-semibold text-sm md:text-base text-center">
-                            <div>Transportul în orașul Chișinău este gratuit!</div>
-                            <Separator className="bg-sky-500 my-2"/>
-                            <div>Orice meniu selectat poate veni cu o ofertă specială dacă alegi și Cabina Foto!</div>
-                        </div>
-                    </div>
                     {menuData.menus.map((menuCategory, categoryIndex) => (
                         <div key={categoryIndex} className="p-4 mt-8 w-full max-w-7xl mx-auto px-4 rounded-xl">
                             <h2 className="text-lg md:text-xl font-bold text-white flex items-center rounded-xl w-fit py-2 px-3 shadow-md shadow-sky-500/50">

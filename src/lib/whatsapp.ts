@@ -34,7 +34,7 @@ export const openWhatsApp = ({ phoneNumber, message = "" }: WhatsAppConfig): voi
  * Default WhatsApp configuration for DREAMBAR
  */
 export const dreambarWhatsAppConfig: WhatsAppConfig = {
-  phoneNumber: "4581949992",
+  phoneNumber: "37378860818",
   message: "Salut! Sunt interesat de serviciile DREAMBAR."
 };
 
