@@ -61,7 +61,7 @@ export function CocktailsPage() {
                                 <div className="flex justify-center mb-4">
                                 <div className="w-[370px] h-[370px] rounded-xl bg-sky-400/20 flex items-center justify-center shadow-lg">
                                     <img 
-                                    src={`/src/assets/images/cocktails/${cocktail.image}`}
+                                    src={`/images/cocktails/${cocktail.image}`}
                                     alt={cocktail.name}
                                     className="w-full h-full object-contain"
                                     />
