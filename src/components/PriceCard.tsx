@@ -22,7 +22,7 @@ interface PriceCardProps {
   }>;
 }
 
-// Cocktail categorization with colors
+// Cocktail categorization with colors - moved outside component to prevent recreation
 const getCocktailCategory = (name: string) => {
   const cocktailName = name.toUpperCase();
   
