@@ -287,48 +287,68 @@
       "cake": true,
       "packages": [
         {
-          "title": "100 shot-uri",
+          "title": "Tort 100 shot-uri",
           "totalCocktails": 100,
           "priceMDL": 7000,
           "priceEUR": 350,
           "cocktails": [
-            { "name": "Shot Cake Mix", "portions": 100 }
+            { "name": "B52", "portions": null },
+            { "name": "HEROSHIMA", "portions": null },
+            { "name": "GREEN MEXICAN", "portions": null },
+            { "name": "DREAM SHOT", "portions": null },
+            { "name": "BLUE KAMIKAZE", "portions": null }
           ]
         },
         {
-          "title": "150 shot-uri",
+          "title": "Tort 150 shot-uri",
           "totalCocktails": 150,
           "priceMDL": 10500,
           "priceEUR": 525,
           "cocktails": [
-            { "name": "Shot Cake Mix", "portions": 150 }
+            { "name": "B52", "portions": null },
+            { "name": "HEROSHIMA", "portions": null },
+            { "name": "GREEN MEXICAN", "portions": null },
+            { "name": "DREAM SHOT", "portions": null },
+            { "name": "BLUE KAMIKAZE", "portions": null }
           ]
         },
         {
-          "title": "200 shot-uri",
+          "title": "Tort 200 shot-uri",
           "totalCocktails": 200,
           "priceMDL": 14000,
           "priceEUR": 700,
           "cocktails": [
-            { "name": "Shot Cake Mix", "portions": 200 }
+            { "name": "B52", "portions": null },
+            { "name": "HEROSHIMA", "portions": null },
+            { "name": "GREEN MEXICAN", "portions": null },
+            { "name": "DREAM SHOT", "portions": null },
+            { "name": "BLUE KAMIKAZE", "portions": null }
           ]
         },
         {
-          "title": "250 shot-uri",
+          "title": "Tort 250 shot-uri",
           "totalCocktails": 250,
           "priceMDL": 17500,
           "priceEUR": 875,
           "cocktails": [
-            { "name": "Shot Cake Mix", "portions": 250 }
+            { "name": "B52", "portions": null },
+            { "name": "HEROSHIMA", "portions": null },
+            { "name": "GREEN MEXICAN", "portions": null },
+            { "name": "DREAM SHOT", "portions": null },
+            { "name": "BLUE KAMIKAZE", "portions": null }
           ]
         },
         {
-          "title": "300 shot-uri",
+          "title": "Tort 300 shot-uri",
           "totalCocktails": 300,
           "priceMDL": 21000,
           "priceEUR": 1050,
           "cocktails": [
-            { "name": "Shot Cake Mix", "portions": 300 }
+            { "name": "B52", "portions": null },
+            { "name": "HEROSHIMA", "portions": null },
+            { "name": "GREEN MEXICAN", "portions": null },
+            { "name": "DREAM SHOT", "portions": null },
+            { "name": "BLUE KAMIKAZE", "portions": null }
           ]
         }
       ]

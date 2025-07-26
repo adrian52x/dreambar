@@ -1,13 +1,17 @@
-import { Instagram, MessageCircle } from "lucide-react";
-import { useState } from "react";
+import { Instagram } from "lucide-react";
+import { useState, useCallback } from "react";
 import { Button } from "./components/ui/button";
 import { TabContent } from "./components/TabContent";
 import { openDreambarWhatsApp } from "./lib/whatsapp";
-import { Barman } from "./icons";
+import { Barman, WhatsApp } from "./icons";
 
 
 function App() {
     const [activeTab, setActiveTab] = useState<'bar' | 'photo'>('bar');
+
+    // Memoize tab handlers to prevent unnecessary re-renders
+    const handleBarTabClick = useCallback(() => setActiveTab('bar'), []);
+    const handlePhotoTabClick = useCallback(() => setActiveTab('photo'), []);
 
     return (
         <div className="bg-neutral-900">
@@ -34,7 +38,7 @@ function App() {
                                 ? 'bg-sky-400 hover:bg-sky-500' 
                                 : 'hover:bg-neutral-300'
                         }`}
-                        onClick={() => setActiveTab('bar')}
+                        onClick={handleBarTabClick}
                     >
                         <Barman size={50} />
                         <div className="text-xl">Bar Mobil</div>
@@ -46,7 +50,7 @@ function App() {
                                 ? 'bg-sky-400 hover:bg-sky-500' 
                                 : 'hover:bg-neutral-300'
                         }`}
-                        onClick={() => setActiveTab('photo')}
+                        onClick={handlePhotoTabClick}
                     >
                         <Instagram size={50} />
                         <div className="text-xl">Cabina Foto</div>
@@ -59,10 +63,10 @@ function App() {
                 {/* Floating WhatsApp Button */}
                 <button
                     onClick={openDreambarWhatsApp}
-                    className="fixed bottom-6 right-6 z-50 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-300"
+                    className="fixed bottom-6 right-6 z-50 sm:bg-green-500 sm:p-2 hover:bg-green-600 text-white rounded-full shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-300"
                     aria-label="Contact us on WhatsApp"
                 >
-                    <MessageCircle size={24} />
+                    <WhatsApp size={36} />
                 </button>
             </div>
         </div>
