@@ -71,9 +71,13 @@ function App() {
                     </Button>
                 </div>
 
-                <div className="max-w-7xl mx-auto mt-8 px-4">
+                <div className="max-w-7xl mx-auto mt-8 px-8">
                     <div className="shadow-md shadow-sky-500/50 text-sky-100 rounded-lg p-2 mb-2 font-semibold text-sm md:text-base text-center">
-                        <div>Transportul în orașul Chișinău este gratuit!</div>
+                        <div className="text-sm md:text-base max-w-lg">
+                            Costul transportului este de 350 lei în Chișinău, iar pentru locațiile din afara orașului se adaugă 5 lei pentru fiecare kilometru parcurs.
+                            <br />
+                            350lei + 5lei/km
+                        </div>
                     </div>
                 </div>
 
