@@ -1,0 +1,337 @@
+{
+  "menus": [
+    {
+      "category": "Menu pentru 30-90 de persoane",
+      "cake": false,
+      "packages": [
+        {
+          "title": "MENIU 120 cocktailuri",
+          "totalCocktails": 120,
+          "priceMDL": 11800,
+          "priceEUR": 590,
+          "cocktails": [
+            { "name": "APEROL SPRITZ", "portions": 10 },
+            { "name": "Candy Lady", "portions": 20 },
+            { "name": "PORNSTAR MARTINI", "portions": 20 },
+            { "name": "BLUE DREAM (Havana)", "portions": 15 },
+            { "name": "WILD PASSION (căpșună+ananas)", "portions": 15 },
+            { "name": "EXOTIC LYCHEE (lychee+maracuia)", "portions": 10 },
+            { "name": "GREEN MEXICAN", "portions": 15 },
+            { "name": "DREAM SHOT", "portions": 15 }
+          ]
+        },
+        {
+          "title": "MENIU 150 cocktailuri",
+          "totalCocktails": 150,
+          "priceMDL": 14600,
+          "priceEUR": 730,
+          "cocktails": [
+            { "name": "APEROL SPRITZ", "portions": 15 },
+            { "name": "Candy Lady", "portions": 20 },
+            { "name": "PORNSTAR MARTINI", "portions": 20 },
+            { "name": "BLUE DREAM (Havana)", "portions": 15 },
+            { "name": "WILD PASSION (căpșună+ananas)", "portions": 20 },
+            { "name": "EXOTIC LYCHEE (lychee+maracuia)", "portions": 15 },
+            { "name": "LEMOGLOW (lemongrass+maracuia)", "portions": 15 },
+            { "name": "GREEN MEXICAN", "portions": 15 },
+            { "name": "DREAM SHOT", "portions": 15 }
+          ]
+        },
+        {
+          "title": "MENIU 170 cocktailuri",
+          "totalCocktails": 170,
+          "priceMDL": 16700,
+          "priceEUR": 835,
+          "cocktails": [
+            { "name": "APEROL SPRITZ", "portions": 15 },
+            { "name": "Candy Lady", "portions": 25 },
+            { "name": "PORNSTAR MARTINI", "portions": 25 },
+            { "name": "BLUE DREAM (Havana)", "portions": 20 },
+            { "name": "WILD PASSION (căpșună+ananas)", "portions": 20 },
+            { "name": "EXOTIC LYCHEE (lychee+maracuia)", "portions": 20 },
+            { "name": "LEMOGLOW (lemongrass+maracuia)", "portions": 15 },
+            { "name": "GREEN MEXICAN", "portions": 15 },
+            { "name": "DREAM SHOT", "portions": 15 }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Menu pentru 90-170 de persoane",
+      "cake": false,
+      "packages": [
+        {
+          "title": "MENIU 200 cocktailuri",
+          "totalCocktails": 200,
+          "priceMDL": 18600,
+          "priceEUR": 930,
+          "cocktails": [
+            { "name": "APEROL SPRITZ", "portions": 20 },
+            { "name": "Candy Lady", "portions": 20 },
+            { "name": "PORNSTAR MARTINI", "portions": 25 },
+            { "name": "BLUE DREAM (Havana)", "portions": 25 },
+            { "name": "WILD PASSION (căpșună+ananas)", "portions": 20 },
+            { "name": "EXOTIC LYCHEE (lychee+maracuia)", "portions": 15 },
+            { "name": "LEMOGLOW (lemongrass+maracuia)", "portions": 20 },
+            { "name": "PINK GRAPEFRUIT (zmeură+grapefruit)", "portions": 15 },
+            { "name": "GREEN MEXICAN", "portions": 10 },
+            { "name": "DREAM SHOT", "portions": 10 },
+            { "name": "B52", "portions": 10 }
+          ]
+        },
+        {
+          "title": "MENIU 250 cocktailuri",
+          "totalCocktails": 250,
+          "priceMDL": 22750,
+          "priceEUR": 1138,
+          "cocktails": [
+            { "name": "APEROL SPRITZ", "portions": 20 },
+            { "name": "Candy Lady", "portions": 20 },
+            { "name": "PORNSTAR MARTINI", "portions": 25 },
+            { "name": "BLUE DREAM (Havana)", "portions": 25 },
+            { "name": "Angels KISS (bellini)", "portions": 20 },
+            { "name": "WILD PASSION (căpșună+ananas)", "portions": 25 },
+            { "name": "EXOTIC LYCHEE (lychee+maracuia)", "portions": 25 },
+            { "name": "LEMOGLOW (lemongrass+maracuia)", "portions": 25 },
+            { "name": "PINK GRAPEFRUIT (zmeură+grapefruit)", "portions": 20 },
+            { "name": "GREEN MEXICAN", "portions": 15 },
+            { "name": "DREAM SHOT", "portions": 15 },
+            { "name": "B52", "portions": 15 }
+          ]
+        },
+        {
+          "title": "MENIU 300 cocktailuri",
+          "totalCocktails": 300,
+          "priceMDL": 28500,
+          "priceEUR": 1425,
+          "cocktails": [
+            { "name": "APEROL SPRITZ", "portions": 25 },
+            { "name": "Candy Lady", "portions": 25 },
+            { "name": "PORNSTAR MARTINI", "portions": 30 },
+            { "name": "BLUE DREAM (Havana)", "portions": 25 },
+            { "name": "Angels KISS (bellini)", "portions": 25 },
+            { "name": "WILD PASSION (căpșună+ananas)", "portions": 35 },
+            { "name": "EXOTIC LYCHEE (lychee+maracuia)", "portions": 25 },
+            { "name": "LEMOGLOW (lemongrass+maracuia)", "portions": 25 },
+            { "name": "PINK GRAPEFRUIT (zmeură+grapefruit)", "portions": 25 },
+            { "name": "GREEN MEXICAN", "portions": 20 },
+            { "name": "DREAM SHOT", "portions": 20 },
+            { "name": "B52", "portions": 20 }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Menu pentru 170-250 de persoane",
+      "cake": false,
+      "packages": [
+        {
+          "title": "MENIU 330 cocktailuri",
+          "totalCocktails": 330,
+          "priceMDL": 31350,
+          "priceEUR": 1568,
+          "cocktails": [
+            { "name": "APEROL SPRITZ", "portions": 30 },
+            { "name": "Candy Lady", "portions": 25 },
+            { "name": "PORNSTAR MARTINI", "portions": 35 },
+            { "name": "BLUE DREAM (Havana)", "portions": 30 },
+            { "name": "Angels KISS (bellini)", "portions": 30 },
+            { "name": "WILD PASSION (căpșună+ananas)", "portions": 30 },
+            { "name": "EXOTIC LYCHEE (lychee+maracuia)", "portions": 30 },
+            { "name": "LEMOGLOW (lemongrass+maracuia)", "portions": 30 },
+            { "name": "PINK GRAPEFRUIT (zmeură+grapefruit)", "portions": 30 },
+            { "name": "GREEN MEXICAN", "portions": 20 },
+            { "name": "DREAM SHOT", "portions": 20 },
+            { "name": "B52", "portions": 20 }
+          ]
+        },
+        {
+          "title": "MENIU 370 cocktailuri",
+          "totalCocktails": 370,
+          "priceMDL": 35200,
+          "priceEUR": 1758,
+          "cocktails": [
+            { "name": "APEROL SPRITZ", "portions": 35 },
+            { "name": "Candy Lady", "portions": 30 },
+            { "name": "PORNSTAR MARTINI", "portions": 35 },
+            { "name": "BLUE DREAM (Havana)", "portions": 30 },
+            { "name": "Angels KISS (bellini)", "portions": 30 },
+            { "name": "WILD PASSION (căpșună+ananas)", "portions": 30 },
+            { "name": "EXOTIC LYCHEE (lychee+maracuia)", "portions": 30 },
+            { "name": "LEMOGLOW (lemongrass+maracuia)", "portions": 30 },
+            { "name": "PINK GRAPEFRUIT (zmeură+grapefruit)", "portions": 30 },
+            { "name": "GREEN MEXICAN", "portions": 30 },
+            { "name": "DREAM SHOT", "portions": 30 },
+            { "name": "B52", "portions": 30 }
+          ]
+        },
+        {
+          "title": "MENIU 400 cocktailuri",
+          "totalCocktails": 400,
+          "priceMDL": 38000,
+          "priceEUR": 1900,
+          "cocktails": [
+            { "name": "APEROL SPRITZ", "portions": 35 },
+            { "name": "Candy Lady", "portions": 30 },
+            { "name": "PORNSTAR MARTINI", "portions": 35 },
+            { "name": "BLUE DREAM (Havana)", "portions": 30 },
+            { "name": "Angels KISS (bellini)", "portions": 30 },
+            { "name": "WILD PASSION (căpșună+ananas)", "portions": 30 },
+            { "name": "EXOTIC LYCHEE (lychee+maracuia)", "portions": 30 },
+            { "name": "LEMOGLOW (lemongrass+maracuia)", "portions": 30 },
+            { "name": "PINK GRAPEFRUIT (zmeură+grapefruit)", "portions": 30 },
+            { "name": "GREEN MEXICAN", "portions": 40 },
+            { "name": "DREAM SHOT", "portions": 40 },
+            { "name": "B52", "portions": 40 }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Menu pentru 250-320 de persoane",
+      "cake": false,
+      "packages": [
+        {
+          "title": "MENIU 430 cocktailuri",
+          "totalCocktails": 430,
+          "priceMDL": 40850,
+          "priceEUR": 2043,
+          "cocktails": [
+            { "name": "APEROL SPRITZ", "portions": 40 },
+            { "name": "Candy Lady", "portions": 35 },
+            { "name": "PORNSTAR MARTINI", "portions": 40 },
+            { "name": "BLUE DREAM (Havana)", "portions": 35 },
+            { "name": "Angels KISS (bellini)", "portions": 35 },
+            { "name": "WILD PASSION (căpșună+ananas)", "portions": 35 },
+            { "name": "EXOTIC LYCHEE (lychee+maracuia)", "portions": 30 },
+            { "name": "LEMOGLOW (lemongrass+maracuia)", "portions": 30 },
+            { "name": "PINK GRAPEFRUIT (zmeură+grapefruit)", "portions": 30 },
+            { "name": "GREEN MEXICAN", "portions": 40 },
+            { "name": "DREAM SHOT", "portions": 40 },
+            { "name": "B52", "portions": 40 }
+          ]
+        },
+        {
+          "title": "MENIU 470 cocktailuri",
+          "totalCocktails": 470,
+          "priceMDL": 44650,
+          "priceEUR": 2233,
+          "cocktails": [
+            { "name": "APEROL SPRITZ", "portions": 40 },
+            { "name": "Candy Lady", "portions": 35 },
+            { "name": "PORNSTAR MARTINI", "portions": 40 },
+            { "name": "BLUE DREAM (Havana)", "portions": 35 },
+            { "name": "Angels KISS (bellini)", "portions": 35 },
+            { "name": "WILD PASSION (căpșună+ananas)", "portions": 35 },
+            { "name": "EXOTIC LYCHEE (lychee+maracuia)", "portions": 35 },
+            { "name": "LEMOGLOW (lemongrass+maracuia)", "portions": 35 },
+            { "name": "PINK GRAPEFRUIT (zmeură+grapefruit)", "portions": 35 },
+            { "name": "GREEN MEXICAN", "portions": 45 },
+            { "name": "DREAM SHOT", "portions": 45 },
+            { "name": "B52", "portions": 45 },
+            { "name": "BLUE KAMIKAZE", "portions": 10 }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Menu EXCLUSIV",
+      "cake": false,
+      "packages": [
+        {
+          "title": "MENIU EXCLUSIV 500 cocktailuri",
+          "totalCocktails": 500,
+          "priceMDL": 47500,
+          "priceEUR": 2375,
+          "cocktails": [
+            { "name": "APEROL SPRITZ", "portions": 40 },
+            { "name": "Candy Lady", "portions": 40 },
+            { "name": "PORNSTAR MARTINI", "portions": 40 },
+            { "name": "BLUE DREAM (Havana)", "portions": 35 },
+            { "name": "Angels KISS (bellini)", "portions": 35 },
+            { "name": "WILD PASSION (căpșună+ananas)", "portions": 35 },
+            { "name": "EXOTIC LYCHEE (lychee+maracuia)", "portions": 35 },
+            { "name": "LEMOGLOW (lemongrass+maracuia)", "portions": 35 },
+            { "name": "PINK GRAPEFRUIT (zmeură+grapefruit)", "portions": 35 },
+            { "name": "GREEN MEXICAN", "portions": 50 },
+            { "name": "DREAM SHOT", "portions": 50 },
+            { "name": "B52", "portions": 50 },
+            { "name": "BLUE KAMIKAZE", "portions": 20 }
+          ]
+        },
+        {
+          "title": "MENIU EXCLUSIV 1000 cocktailuri",
+          "totalCocktails": 1000,
+          "priceMDL": 95000,
+          "priceEUR": 4750,
+          "cocktails": [
+            { "name": "APEROL SPRITZ", "portions": 100 },
+            { "name": "Candy Lady", "portions": 90 },
+            { "name": "PORNSTAR MARTINI", "portions": 100 },
+            { "name": "BLUE DREAM (Havana)", "portions": 90 },
+            { "name": "Angels KISS (bellini)", "portions": 90 },
+            { "name": "WILD PASSION (căpșună+ananas)", "portions": 50 },
+            { "name": "EXOTIC LYCHEE (lychee+maracuia)", "portions": 50 },
+            { "name": "LEMOGLOW (lemongrass+maracuia)", "portions": 50 },
+            { "name": "PINK GRAPEFRUIT (zmeură+grapefruit)", "portions": 50 },
+            { "name": "GREEN MEXICAN", "portions": 85 },
+            { "name": "DREAM SHOT", "portions": 85 },
+            { "name": "B52", "portions": 85 },
+            { "name": "BLUE KAMIKAZE", "portions": 85 }
+          ]
+        }
+      ]
+    },
+    {
+      "category": "Tort din SHOT-URI",
+      "cake": true,
+      "packages": [
+        {
+          "title": "100 shot-uri",
+          "totalCocktails": 100,
+          "priceMDL": 7000,
+          "priceEUR": 350,
+          "cocktails": [
+            { "name": "Shot Cake Mix", "portions": 100 }
+          ]
+        },
+        {
+          "title": "150 shot-uri",
+          "totalCocktails": 150,
+          "priceMDL": 10500,
+          "priceEUR": 525,
+          "cocktails": [
+            { "name": "Shot Cake Mix", "portions": 150 }
+          ]
+        },
+        {
+          "title": "200 shot-uri",
+          "totalCocktails": 200,
+          "priceMDL": 14000,
+          "priceEUR": 700,
+          "cocktails": [
+            { "name": "Shot Cake Mix", "portions": 200 }
+          ]
+        },
+        {
+          "title": "250 shot-uri",
+          "totalCocktails": 250,
+          "priceMDL": 17500,
+          "priceEUR": 875,
+          "cocktails": [
+            { "name": "Shot Cake Mix", "portions": 250 }
+          ]
+        },
+        {
+          "title": "300 shot-uri",
+          "totalCocktails": 300,
+          "priceMDL": 21000,
+          "priceEUR": 1050,
+          "cocktails": [
+            { "name": "Shot Cake Mix", "portions": 300 }
+          ]
+        }
+      ]
+    }
+  ]
+}

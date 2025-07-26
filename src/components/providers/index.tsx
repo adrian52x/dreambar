@@ -9,7 +9,7 @@ import { APP_NAME } from "@/lib/constants";
 function providers({ children }: ChildrenProps) {
   return (
     <RecoilRoot>
-      <ThemeProvider defaultTheme="system" storageKey={`${APP_NAME}-ui-theme`}>
+      <ThemeProvider defaultTheme="dark" storageKey={`${APP_NAME}-ui-theme`}>
         {children}
       </ThemeProvider>
     </RecoilRoot>

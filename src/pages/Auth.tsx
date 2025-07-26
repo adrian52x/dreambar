@@ -1,20 +1,29 @@
-import Wrapper from "@/components/wrapper";
-
-import H1 from "@/components/typo/H1";
-import H2 from "@/components/typo/H2";
-import H4 from "@/components/typo/H4";
-import InlineCode from "@/components/typo/InlineCode";
 
 const Auth = () => {
-  return (
-    <Wrapper className="flex flex-col items-center justify-center">
-      <H1>Auth</H1>
-      <H2>Look's like you are not authenticated</H2>
-      <H4 className="mt-2 text-muted-foreground">
-        Checkout <InlineCode>@/components/ui/protected-route.tsx</InlineCode> to
-        add protected contents logic.
-      </H4>
-    </Wrapper>
+    return (
+        <div className="relative h-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+            {/* Hero Content */}
+            <div className="z-10 flex h-full flex-col items-center justify-center px-4">
+                <div className="max-w-3xl text-center">
+                    <h1 className="mb-8 text-4xl font-bold tracking-tight sm:text-6xl lg:text-7xl text-white">
+                        DREAM
+                        <span className="text-sky-400">BAR</span>
+                    </h1>
+                    <p className="mx-auto mb-8 max-w-2xl text-lg text-slate-300">
+                        Build modern and beautiful websites with this collection of stunning background patterns. 
+                        Perfect for landing pages, apps, and dashboards.
+                    </p>
+                    <div className="flex flex-wrap justify-center gap-4">
+                        <button className="rounded-lg px-6 py-3 font-medium bg-sky-400 text-slate-900 hover:bg-sky-300">
+                            Get Started
+                        </button>
+                        <button className="rounded-lg border px-6 py-3 font-medium border-slate-700 bg-slate-800 text-white hover:bg-slate-700">
+                            Learn More
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
   );
 };
 
