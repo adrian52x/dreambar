@@ -31,69 +31,69 @@ function App() {
 
                     </div>
 
-                <div className="flex flex-col gap-2 w-[350px] md:w-[600px] md:flex-row md:gap-2">
-                    <div className="flex gap-2 md:contents">
+                    <div className="flex flex-col gap-2 w-[350px] md:w-[600px] md:flex-row md:gap-2">
+                        <div className="flex gap-2 md:contents">
+                            <Button 
+                                variant={"secondary"} 
+                                className={`h-24 w-[200px] flex flex-col items-center transition-colors ${
+                                    activeTab === 'bar' 
+                                        ? 'bg-sky-400 hover:bg-sky-500' 
+                                        : 'hover:bg-neutral-300'
+                                }`}
+                                onClick={handleBarTabClick}
+                            >
+                                <Barman size={50} />
+                                <div className="text-xl">Bar Mobil</div>
+                            </Button>
+                            <Button 
+                                variant={"secondary"} 
+                                className={`h-24 w-[200px] flex flex-col items-center transition-colors ${
+                                    activeTab === 'photo' 
+                                        ? 'bg-sky-400 hover:bg-sky-500' 
+                                        : 'hover:bg-neutral-300'
+                                }`}
+                                onClick={handlePhotoTabClick}
+                            >
+                                <Instagram size={50} />
+                                <div className="text-xl">Cabina Foto</div>
+                            </Button>
+                        </div>
                         <Button 
                             variant={"secondary"} 
-                            className={`h-24 w-[200px] flex flex-col items-center transition-colors ${
-                                activeTab === 'bar' 
+                            className={`h-24 w-full md:w-[200px] flex flex-col items-center transition-colors ${
+                                activeTab === 'both' 
                                     ? 'bg-sky-400 hover:bg-sky-500' 
                                     : 'hover:bg-neutral-300'
                             }`}
-                            onClick={handleBarTabClick}
+                            onClick={handleBothTabClick}
                         >
-                            <Barman size={50} />
-                            <div className="text-xl">Bar Mobil</div>
-                        </Button>
-                        <Button 
-                            variant={"secondary"} 
-                            className={`h-24 w-[200px] flex flex-col items-center transition-colors ${
-                                activeTab === 'photo' 
-                                    ? 'bg-sky-400 hover:bg-sky-500' 
-                                    : 'hover:bg-neutral-300'
-                            }`}
-                            onClick={handlePhotoTabClick}
-                        >
-                            <Instagram size={50} />
-                            <div className="text-xl">Cabina Foto</div>
+                            <div className="text-xl">Bar & Cabina Foto</div>
                         </Button>
                     </div>
-                    <Button 
-                        variant={"secondary"} 
-                        className={`h-24 w-full md:w-[200px] flex flex-col items-center transition-colors ${
-                            activeTab === 'both' 
-                                ? 'bg-sky-400 hover:bg-sky-500' 
-                                : 'hover:bg-neutral-300'
-                        }`}
-                        onClick={handleBothTabClick}
-                    >
-                        <div className="text-xl">Bar & Cabina Foto</div>
-                    </Button>
-                </div>
 
-                <div className="max-w-7xl mx-auto mt-8 px-8">
-                    <div className="shadow-md shadow-sky-500/50 text-sky-100 rounded-lg p-2 mb-2 font-semibold text-sm md:text-base text-center">
-                        <div className="text-sm md:text-base max-w-lg">
-                            Costul transportului este de 350 lei în Chișinău, iar pentru locațiile din afara orașului se adaugă 5 lei pentru fiecare kilometru parcurs.
-                            <br />
-                            350lei + 5lei/km
+                    <div className="max-w-7xl mx-auto mt-8 px-8">
+                        <div className="shadow-md shadow-sky-500/50 text-sky-100 rounded-lg p-2 mb-2 font-semibold text-sm md:text-base text-center">
+                            <div className="text-sm md:text-base max-w-lg">
+                                Costul transportului este de 350 lei în Chișinău, iar pentru locațiile din afara orașului se adaugă 5 lei pentru fiecare kilometru parcurs.
+                                <br />
+                                350lei + 5lei/km
+                            </div>
                         </div>
                     </div>
+
+                    {/* Tab Content */}
+                    <TabContent activeTab={activeTab} />
+
+                    {/* Floating WhatsApp Button */}
+                    <button
+                        onClick={openDreambarWhatsApp}
+                        className="fixed bottom-6 right-6 z-50 sm:bg-green-500 sm:p-2 hover:bg-green-600 text-white rounded-full shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-300"
+                        aria-label="Contact us on WhatsApp"
+                    >
+                        <WhatsApp size={36} />
+                    </button>
                 </div>
-
-                {/* Tab Content */}
-                <TabContent activeTab={activeTab} />
-
-                {/* Floating WhatsApp Button */}
-                <button
-                    onClick={openDreambarWhatsApp}
-                    className="fixed bottom-6 right-6 z-50 sm:bg-green-500 sm:p-2 hover:bg-green-600 text-white rounded-full shadow-lg transition-all duration-300 hover:scale-110 focus:outline-none focus:ring-4 focus:ring-green-300"
-                    aria-label="Contact us on WhatsApp"
-                >
-                    <WhatsApp size={36} />
-                </button>
             </div>
-        </div>
         </div>
     );
 }

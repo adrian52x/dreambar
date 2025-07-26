@@ -1,6 +1,8 @@
 import { PriceCard } from "./PriceCard";
 import menuData from "../data/menuData.json";
 import { File, Cake } from "lucide-react";
+import { Button } from "./ui/button";
+import { Link } from "react-router-dom";
 interface TabContentProps {
     activeTab: 'bar' | 'photo' | 'both';
 }
@@ -10,6 +12,11 @@ export function TabContent({ activeTab }: TabContentProps) {
         case 'bar':
             return (
                 <>
+                    <Link to="/cocktails">
+                        <Button variant="outline" className="border-sky-400 bg-transparent bg-white/5 hover:bg-sky-400/20 text-white hover:text-white mt-4 ">
+                            Cocktailurile noastre
+                        </Button>
+                    </Link>
                     {menuData.menus.map((menuCategory, categoryIndex) => (
                         <div key={categoryIndex} className="p-4 mt-8 w-full max-w-7xl mx-auto px-4 rounded-xl">
                             <h2 className="text-lg md:text-xl font-bold text-white flex items-center rounded-xl w-fit py-2 px-3 shadow-md shadow-sky-500/50">
