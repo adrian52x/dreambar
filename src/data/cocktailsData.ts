@@ -27,14 +27,14 @@ export const cocktailsData: CocktailData[] = [
     category: "COCKTAILS",
     ingredients: ["Prosecco", "Piure de piersici", "Lichior de piersici", "Piersică proaspătă"],
     description: "Cocktail italian elegant cu spumă și arome de piersici proaspete",
-    image: "aperol.png"
+    image: "bellini.png"
   },
   {
     name: "BLUE DREAM (Havana)",
     category: "COCKTAILS",
     ingredients: ["Rom alb", "Blue curaçao", "Cremă de nucă de cocos", "Suc de ananas", "Lămâie"],
     description: "Cocktail tropical albastru care te transportă pe plajele din Havana",
-    image: "aperol.png"
+    image: "Havana.png"
   },
   {
     name: "PORNSTAR MARTINI",
