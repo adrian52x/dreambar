@@ -59,11 +59,11 @@ export function CocktailsPage() {
                             >
                                 {/* Large 370x370 Cocktail Image */}
                                 <div className="flex justify-center mb-4">
-                                <div className="w-[370px] h-[370px] rounded-xl bg-sky-400/20 flex items-center justify-center shadow-lg">
+                                <div className="w-[370px] h-[370px] rounded-xl flex items-center justify-center shadow-lg">
                                     <img 
                                     src={`/images/cocktails/${cocktail.image}`}
                                     alt={cocktail.name}
-                                    className="w-full h-full object-contain"
+                                    className="w-full h-full object-contain rounded-xl"
                                     />
         
                                 </div>
