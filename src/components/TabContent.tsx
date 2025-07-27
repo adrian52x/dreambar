@@ -1,11 +1,13 @@
 import { PriceCard } from "./PriceCard";
 import menuData from "../data/menuData.json";
 import cabinaFotoData from "../data/cabinaFotoPackages.json";
+import comboData from "../data/comboPackages.json";
 import { File, Cake } from "lucide-react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { CabinaFotoCard } from "./CabinaFotoCard";
 import { ExtraServiceGuestBook } from "./ExtraServiceGuestBook";
+import { BarAndCabinaCard } from "./BarAndCabinaCard";
 interface TabContentProps {
     activeTab: 'bar' | 'photo' | 'both';
 }
@@ -60,6 +62,21 @@ export function TabContent({ activeTab }: TabContentProps) {
                     </div>
                 </>
             );
+        case 'both':
+            return (
+                <>
+                    <div className="p-4 mt-8 w-full max-w-6xl mx-auto px-4 rounded-xl">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 text-white min-h-[200px]">
+                            {comboData.map((pkg, idx) => (
+                                <BarAndCabinaCard
+                                    key={idx}
+                                    pkg={pkg}
+                                />
+                            ))}
+                        </div>
+                    </div>
+                </>
+            );    
         default:
             return null;
     }

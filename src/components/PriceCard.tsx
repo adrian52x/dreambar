@@ -109,35 +109,49 @@ const PriceCard = memo(function PriceCard({ title, totalCocktails, priceMDL, pri
         <Drawer>
             <DrawerTrigger asChild>
                 <div className="flex flex-col border-t-2 border-b-2 border-sky-400 rounded-lg p-6 hover:bg-sky-400/10 transition-colors cursor-pointer bg-white/5 backdrop-blur-sm will-change-transform">
-                    <div className="flex flex-col items-center mb-4">
-                        {cake ? 
-                            <CocktailsCake size={70} className="text-sky-400 mb-2" /> 
-                            : 
-                            <CocktailStraw size={70} className="text-sky-400 mb-2" />
-                        }
-                        <div className="text-lg font-bold text-sky-300">{totalCocktails} 
+                    {/* Header */}
+                    <div className="text-center mb-4">
+                        <div className="text-xs font-semibold text-sky-300 uppercase tracking-wide mb-2">
+                            {cake ? "TORT DIN SHOTS" : "BAR MOBIL"}
+                        </div>
+                        <div className="flex justify-center mb-3">
                             {cake ? 
-                                " SHOTS" 
+                                <CocktailsCake size={70} className="text-sky-400" /> 
                                 : 
-                                " COCKTAILS"
-                            } 
+                                <CocktailStraw size={70} className="text-sky-400" />
+                            }
                         </div>
                     </div>
 
-                    <div className="flex justify-center space-x-2 border-t border-sky-400/30 pt-4">
-                        <div className="flex items-center justify-center space-x-1">
-                            <div className="text-xl font-bold text-white">{priceMDL.toLocaleString()}</div>
-                            <div className="text-sm mt-1 text-gray-300">MDL</div>
+                    {/* Cocktails count highlight */}
+                    <div className="bg-gradient-to-r from-sky-500/20 to-blue-500/20 rounded-lg p-3 mb-4 border border-sky-400/30">
+                        <div className="text-center">
+                            <div className="text-xl font-bold text-white mb-1">
+                                {totalCocktails} {cake ? "SHOTS" : "COCKTAILS"}
+                            </div>
+                            <div className="text-xs text-sky-300 uppercase tracking-wide">
+                                {cake ? "Total shots incluse" : "Total cocktailuri incluse"}
+                            </div>
                         </div>
-                        <div className="flex items-center justify-center space-x-1">
-                            <div className="text-xl font-bold text-white">/ {priceEUR}</div>
-                            <div className="text-sm mt-1 text-gray-300">€</div>
+                    </div>
+
+                    {/* Price */}
+                    <div className="border-t border-sky-400/30 pt-4 text-center">
+                        <div className="flex justify-center items-center gap-2 mb-1">
+                            <div className="text-xl font-bold text-white">{priceMDL.toLocaleString()}</div>
+                            <div className="text-sm text-gray-300">MDL</div>
+                            <div className="text-gray-400">|</div>
+                            <div className="text-xl font-bold text-white">{priceEUR}</div>
+                            <div className="text-sm text-gray-300">€</div>
+                        </div>
+                        <div className="text-xs text-gray-400 uppercase tracking-wide">
+                            Preț total pachet
                         </div>
                     </div>
                 </div>
             </DrawerTrigger>
             
-            <DrawerContent className="border-1 bg-neutral-900/95 bg-[radial-gradient(ellipse_80%_80%_at_50%_-30%,rgba(56,189,248,0.3),rgba(255,255,255,0))] backdrop-blur-sm will-change-transform">
+            <DrawerContent className="border-1 bg-neutral-900/95 bg-[radial-gradient(ellipse_80%_80%_at_50%_-50%,rgba(56,189,248,0.3),rgba(255,255,255,0))] backdrop-blur-md will-change-transform">
                 <div className="mx-auto w-full max-w-2xl">
                     <DrawerHeader>
                         <DrawerTitle className="text-center text-sky-400">{title}</DrawerTitle>

@@ -61,7 +61,7 @@ function App() {
                         </div>
                         <Button 
                             variant={"secondary"} 
-                            className={`h-24 w-full md:w-[200px] flex flex-col items-center transition-colors ${
+                            className={`h-24 w-full md:w-[205px] flex flex-col items-center transition-colors ${
                                 activeTab === 'both' 
                                     ? 'bg-sky-400 hover:bg-sky-500' 
                                     : 'hover:bg-neutral-300'
@@ -69,6 +69,7 @@ function App() {
                             onClick={handleBothTabClick}
                         >
                             <div className="text-xl">Bar & Cabina Foto</div>
+                            <div className="text-sm">OFERTE</div>
                         </Button>
                     </div>
 
