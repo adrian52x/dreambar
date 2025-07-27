@@ -1,8 +1,11 @@
 import { PriceCard } from "./PriceCard";
 import menuData from "../data/menuData.json";
+import cabinaFotoData from "../data/cabinaFotoPackages.json";
 import { File, Cake } from "lucide-react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
+import { CabinaFotoCard } from "./CabinaFotoCard";
+import { ExtraServiceGuestBook } from "./ExtraServiceGuestBook";
 interface TabContentProps {
     activeTab: 'bar' | 'photo' | 'both';
 }
@@ -13,12 +16,12 @@ export function TabContent({ activeTab }: TabContentProps) {
             return (
                 <>
                     <Link to="/cocktails">
-                        <Button variant="outline" className="border-sky-400 bg-transparent bg-white/5 hover:bg-sky-400/20 text-white hover:text-white mt-4 ">
+                        <Button variant="outline" className="border-sky-400 bg-transparent bg-white/5 hover:bg-sky-400/20 text-white text-lg hover:text-white mt-4 ">
                             Cocktailurile noastre
                         </Button>
                     </Link>
-                    {menuData.menus.map((menuCategory, categoryIndex) => (
-                        <div key={categoryIndex} className="p-4 mt-8 w-full max-w-7xl mx-auto px-4 rounded-xl">
+                    {menuData.menus.map((menuCategory, idx) => (
+                        <div key={idx} className="p-4 mt-8 w-full max-w-7xl mx-auto px-4 rounded-xl">
                             <h2 className="text-lg md:text-xl font-bold text-white flex items-center rounded-xl w-fit py-2 px-3 shadow-md shadow-sky-500/50">
                                 {menuCategory.cake ?
                                     <Cake className="mr-2" /> : <File className="mr-2" />}
@@ -43,18 +46,19 @@ export function TabContent({ activeTab }: TabContentProps) {
             );
         case 'photo':
             return (
-                <div className="mt-8 max-w-4xl mx-auto">
-                    <h2 className="text-2xl font-bold text-white mb-4 text-center">Cabina Foto Servicii</h2>
-                    <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 text-white">
-                        <p className="text-lg mb-4">test</p>
-                        {/* <ul className="space-y-2">
-                            <li>• Professional photo booth</li>
-                            <li>• Custom backgrounds and props</li>
-                            <li>• Instant photo prints</li>
-                            <li>• Social media sharing</li>
-                        </ul> */}
+                <>
+                    <ExtraServiceGuestBook />
+                    <div className="p-4 mt-8 w-full max-w-6xl mx-auto px-4 rounded-xl">
+                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 text-white min-h-[200px]">
+                            {cabinaFotoData.map((pkg) => (
+                                <CabinaFotoCard
+                                    key={pkg.duration}
+                                    pkg={pkg}
+                                />
+                            ))}
+                        </div>
                     </div>
-                </div>
+                </>
             );
         default:
             return null;

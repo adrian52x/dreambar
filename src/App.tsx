@@ -4,6 +4,7 @@ import { Button } from "./components/ui/button";
 import { TabContent } from "./components/TabContent";
 import { openDreambarWhatsApp } from "./lib/whatsapp";
 import { Barman, WhatsApp } from "./icons";
+import { TransportationCostDialog } from "./components/TransportationCostDialog";
 
 
 function App() {
@@ -71,15 +72,7 @@ function App() {
                         </Button>
                     </div>
 
-                    <div className="max-w-7xl mx-auto mt-8 px-8">
-                        <div className="shadow-md shadow-sky-500/50 text-sky-100 rounded-lg p-2 mb-2 font-semibold text-sm md:text-base text-center">
-                            <div className="text-sm md:text-base max-w-lg">
-                                Costul transportului este de 350 lei în Chișinău, iar pentru locațiile din afara orașului se adaugă 5 lei pentru fiecare kilometru parcurs.
-                                <br />
-                                350lei + 5lei/km
-                            </div>
-                        </div>
-                    </div>
+                    <TransportationCostDialog />
 
                     {/* Tab Content */}
                     <TabContent activeTab={activeTab} />

@@ -1,0 +1,26 @@
+[
+  {
+    "duration": "1 oră",
+    "priceEUR": 170
+  },
+  {
+    "duration": "2 ore",
+    "priceEUR": 250
+  },
+  {
+    "duration": "3 ore",
+    "priceEUR": 300
+  },
+  {
+    "duration": "4 ore",
+    "priceEUR": 350
+  },
+  {
+    "duration": "5 ore",
+    "priceEUR": 400
+  },
+  {
+    "duration": "6 ore",
+    "priceEUR": 450
+  }
+]
