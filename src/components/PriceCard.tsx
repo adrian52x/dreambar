@@ -140,7 +140,7 @@ const PriceCard = memo(function PriceCard({ title, totalCocktails, priceMDL, pri
                         <div className="flex justify-center items-center gap-2 mb-1">
                             <div className="text-xl font-bold text-white">{priceMDL.toLocaleString()}</div>
                             <div className="text-sm text-gray-300">MDL</div>
-                            <div className="text-gray-400">|</div>
+                            <div className="text-gray-400">/</div>
                             <div className="text-xl font-bold text-white">{priceEUR}</div>
                             <div className="text-sm text-gray-300">€</div>
                         </div>
