@@ -13,7 +13,7 @@ export const cocktailsData: CocktailData[] = [
     category: "COCKTAILS",
     ingredients: ["Aperol", "Prosecco", "Apă minerală", "Felie de portocală"],
     description: "Aperitiv italian clasic cu un echilibru perfect între amar și dulce",
-    image: "aperol.png"
+    image: "aperol.jpg"
   },
   {
     name: "CANDY LADY",
@@ -27,21 +27,21 @@ export const cocktailsData: CocktailData[] = [
     category: "COCKTAILS",
     ingredients: ["Prosecco", "Piure de piersici", "Lichior de piersici", "Piersică proaspătă"],
     description: "Cocktail italian elegant cu spumă și arome de piersici proaspete",
-    image: "bellini.png"
+    image: "bellini.jpg"
   },
   {
     name: "BLUE DREAM (Havana)",
     category: "COCKTAILS",
     ingredients: ["Rom alb", "Blue curaçao", "Cremă de nucă de cocos", "Suc de ananas", "Lămâie"],
     description: "Cocktail tropical albastru care te transportă pe plajele din Havana",
-    image: "Havana.png"
+    image: "Havana.jpg"
   },
   {
     name: "PORNSTAR MARTINI",
     category: "COCKTAILS",
     ingredients: ["Vodcă cu vanilie", "Lichior de fructul pasiunii", "Piure de fructul pasiunii", "Suc de lămâie", "Shot de Prosecco"],
     description: "Cocktail luxos cu note exotice de fructul pasiunii și vanilie",
-    image: "aperol.png"
+    image: "pornstar.jpg"
   },
 
   // MOCKTAILS
@@ -80,34 +80,34 @@ export const cocktailsData: CocktailData[] = [
     category: "SHOTS",
     ingredients: ["Kahlúa", "Bailey's Irish Cream", "Grand Marnier"],
     description: "Shot clasic stratificat care seamănă cu un avion bombardier",
-    image: "aperol.png"
+    image: "b52.jpg"
   },
   {
     name: "HIROSHIMA",
     category: "SHOTS",
     ingredients: ["Vodcă", "Bailey's Irish Cream", "Grenadină", "Sambuca"],
     description: "Shot stratificat exploziv cu prezentare dramatică",
-    image: "aperol.png"
+    image: "hiroshima.jpg"
   },
   {
     name: "GREEN MEXICAN",
     category: "SHOTS",
     ingredients: ["Tequila", "Lichior de pepene Midori", "Suc de lămâie", "Sare pe margine"],
     description: "Shot verde vibrant cu arome de tequila și pepene",
-    image: "aperol.png"
+    image: "mexican.jpg"
   },
   {
     name: "DREAM SHOT (Tequila Sunrise Shot)",
     category: "SHOTS",
     ingredients: ["Tequila", "Suc de portocale", "Grenadină", "Roată de lămâie"],
     description: "Versiunea mini a clasicului Tequila Sunrise în formă de shot",
-    image: "aperol.png"
+    image: "sunrise.jpeg"
   },
   {
     name: "BLUE KAMIKAZE",
     category: "SHOTS",
     ingredients: ["Vodcă", "Blue curaçao", "Suc de lămâie", "Triple sec"],
     description: "Shot albastru îndrăzneț cu un gust citric",
-    image: "aperol.png"
+    image: "kamikaze.jpeg"
   }
 ];
