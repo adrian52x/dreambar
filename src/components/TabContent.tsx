@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { CabinaFotoCard } from "./CabinaFotoCard";
 import { ExtraServiceGuestBook } from "./ExtraServiceGuestBook";
 import { BarAndCabinaCard } from "./BarAndCabinaCard";
+import { CabinaFotoShowcase } from "./CabinaFotoShowcase";
 interface TabContentProps {
     activeTab: 'bar' | 'photo' | 'both';
 }
@@ -50,6 +51,7 @@ export function TabContent({ activeTab }: TabContentProps) {
         case 'photo':
             return (
                 <>
+                    <CabinaFotoShowcase />
                     <ExtraServiceGuestBook />
                     <div className="p-4 mt-8 w-full max-w-6xl mx-auto px-4 rounded-xl">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 text-white min-h-[200px]">
