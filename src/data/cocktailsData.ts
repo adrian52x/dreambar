@@ -13,35 +13,35 @@ export const cocktailsData: CocktailData[] = [
     category: "COCKTAILS",
     ingredients: ["Aperol", "Prosecco", "Apă minerală", "Felie de portocală"],
     description: "Aperitiv italian clasic cu un echilibru perfect între amar și dulce",
-    image: "aperol.jpg"
+    image: "aperol.png"
   },
   {
     name: "CANDY LADY",
     category: "COCKTAILS",
     ingredients: ["Vodcă", "Lichior de piersici", "Suc de afine", "Suc de lămâie", "Zahăr pe margine"],
     description: "Cocktail dulce și fructat cu un final de bomboane",
-    image: "candy_lady.jpg"
+    image: "candy_lady.png"
   },
   {
     name: "ANGEL'S KISS",
     category: "COCKTAILS",
     ingredients: ["Prosecco", "Piure de piersici", "Lichior de piersici", "Piersică proaspătă"],
     description: "Cocktail italian elegant cu spumă și arome de piersici proaspete",
-    image: "bellini.jpg"
+    image: "bellini.png"
   },
   {
     name: "BLUE DREAM",
     category: "COCKTAILS",
     ingredients: ["Rom alb", "Blue curaçao", "Cremă de nucă de cocos", "Suc de ananas", "Lămâie"],
     description: "Cocktail tropical albastru care te transportă pe plajele din Havana",
-    image: "Havana.jpg"
+    image: "Havana.png"
   },
   {
     name: "PORNSTAR MARTINI",
     category: "COCKTAILS",
     ingredients: ["Vodcă cu vanilie", "Lichior de fructul pasiunii", "Piure de fructul pasiunii", "Suc de lămâie", "Shot de Prosecco"],
     description: "Cocktail luxos cu note exotice de fructul pasiunii și vanilie",
-    image: "pornstar.jpg"
+    image: "pornstar.png"
   },
 
   // MOCKTAILS
@@ -50,21 +50,21 @@ export const cocktailsData: CocktailData[] = [
     category: "MOCKTAILS",
     ingredients: ["Căpșuni proaspete", "Suc de ananas", "Suc de lămâie", "Mentă", "Apă minerală"],
     description: "Amestec răcoritor fără alcool de căpșuni și ananas",
-    image: "wild_passion.jpg"
+    image: "wild_passion.png"
   },
   {
     name: "LEMOGLOW (Lemongrass + Maracuia)",
     category: "MOCKTAILS",
     ingredients: ["Sirop de lemongrass", "Piure de fructul pasiunii", "Suc de lămâie", "Apă carbogazoasă"],
     description: "Mocktail exotic cu lemongrass aromat și fructul pasiunii tropical",
-    image: "lemoglow.jpg"
+    image: "lemoglow.png"
   },
   {
     name: "PINK GRAPEFRUIT (Zmeură + Grapefruit)",
     category: "MOCKTAILS",
     ingredients: ["Zmeură proaspătă", "Suc de grapefruit roz", "Suc de lămâie", "Miere", "Mentă"],
     description: "Combinație acidulată și răcoritoare de zmeură și grapefruit",
-    image: "pink_grapefruti.jpg"
+    image: "pink_grapefruti.png"
   },
   {
     name: "EXOTIC LYCHEE (Lychee + Maracuia)",

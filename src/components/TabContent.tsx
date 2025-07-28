@@ -1,4 +1,4 @@
-import { PriceCard } from "./PriceCard";
+import { PriceCard } from "./BarMobilCard";
 import menuData from "../data/menuData.json";
 import cabinaFotoData from "../data/cabinaFotoPackages.json";
 import comboData from "../data/comboPackages.json";
@@ -35,6 +35,7 @@ export function TabContent({ activeTab }: TabContentProps) {
                                         key={packageIndex}
                                         title={menuPackage.title}
                                         totalCocktails={menuPackage.totalCocktails}
+                                        barDuration={menuPackage.barDuration}
                                         priceMDL={menuPackage.priceMDL}
                                         priceEUR={menuPackage.priceEUR}
                                         cake={menuCategory.cake}

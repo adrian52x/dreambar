@@ -13,6 +13,7 @@ import { useMemo, memo } from "react";
 interface PriceCardProps {
   title: string;
   totalCocktails: number;
+  barDuration: number | null;
   priceMDL: number;
   priceEUR: number;
   cake?: boolean;
@@ -52,7 +53,7 @@ const getCocktailCategory = (name: string) => {
   return { category: '', color: 'bg-gray-500/20 text-gray-300 border-gray-400' };
 };
 
-const PriceCard = memo(function PriceCard({ title, totalCocktails, priceMDL, priceEUR, cocktails, cake }: PriceCardProps) {
+const PriceCard = memo(function PriceCard({ title, totalCocktails, barDuration, priceMDL, priceEUR, cocktails, cake }: PriceCardProps) {
     // Memoize the categorized cocktails to avoid recalculation on each render
     const categorizedCocktails = useMemo(() => {
         return cocktails.reduce((acc, cocktail) => {
@@ -123,15 +124,30 @@ const PriceCard = memo(function PriceCard({ title, totalCocktails, priceMDL, pri
                         </div>
                     </div>
 
-                    {/* Cocktails count highlight */}
+                    {/* Cocktails count and duration highlight */}
                     <div className="bg-gradient-to-r from-sky-500/20 to-blue-500/20 rounded-lg p-3 mb-4 border border-sky-400/30">
-                        <div className="text-center">
-                            <div className="text-xl font-bold text-white mb-1">
-                                {totalCocktails} {cake ? "SHOTS" : "COCKTAILS"}
+                        <div className="flex">
+                            {/* Cocktails count - 70% when bar duration exists, 100% when cake or no duration */}
+                            <div className={`text-center ${!cake && barDuration ? 'flex-[0.7]' : 'flex-1'}`}>
+                                <div className="text-xl font-bold text-white mb-1">
+                                    {totalCocktails} {cake ? "SHOTS" : "COCKTAILS"}
+                                </div>
+                                <div className="text-xs text-sky-300 uppercase tracking-wide">
+                                    {cake ? "Total shots incluse" : "Total cocktailuri incluse"}
+                                </div>
                             </div>
-                            <div className="text-xs text-sky-300 uppercase tracking-wide">
-                                {cake ? "Total shots incluse" : "Total cocktailuri incluse"}
-                            </div>
+                            
+                            {/* Bar duration - 30% */}
+                            {!cake && barDuration && (
+                                <div className="flex-[0.3] text-center border-l border-sky-400/30 pl-3">
+                                    <div className="text-lg font-bold text-white mb-1">
+                                        {barDuration} ore
+                                    </div>
+                                    <div className="text-xs text-sky-300 uppercase tracking-wide">
+                                        Deservire
+                                    </div>
+                                </div>
+                            )}
                         </div>
                     </div>
 

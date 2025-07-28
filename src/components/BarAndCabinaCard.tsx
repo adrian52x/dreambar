@@ -6,6 +6,7 @@ interface BarAndCabinaPackage {
     title: string;
     cabinaDuration: string;
     totalCocktails: number;
+    barDuration: number;
     priceEUR: number;
 }
 
@@ -51,7 +52,10 @@ export function BarAndCabinaCard({ pkg }: BarAndCabinaCardProps) {
                         <Wine size={18} className="text-orange-400" />
                         <span className="text-sm font-medium text-orange-300">Bar Mobil</span>
                     </div>
-                    <span className="text-sm font-bold text-white">{pkg.totalCocktails} cocktails</span>
+                    <div className="text-right">
+                        <div className="text-sm font-bold text-white">{pkg.barDuration} ore</div>
+                        <div className="text-sm font-semibold text-orange-300">{pkg.totalCocktails} cocktailuri</div>
+                    </div>
                 </div>
             </div>
 

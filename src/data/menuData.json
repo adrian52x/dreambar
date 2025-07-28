@@ -7,6 +7,7 @@
         {
           "title": "MENIU 120 cocktailuri",
           "totalCocktails": 120,
+          "barDuration": 4,
           "priceMDL": 11800,
           "priceEUR": 590,
           "cocktails": [
@@ -23,6 +24,7 @@
         {
           "title": "MENIU 150 cocktailuri",
           "totalCocktails": 150,
+          "barDuration": 4,
           "priceMDL": 14600,
           "priceEUR": 730,
           "cocktails": [
@@ -40,6 +42,7 @@
         {
           "title": "MENIU 170 cocktailuri",
           "totalCocktails": 170,
+          "barDuration": 4,
           "priceMDL": 16700,
           "priceEUR": 835,
           "cocktails": [
@@ -63,6 +66,7 @@
         {
           "title": "MENIU 200 cocktailuri",
           "totalCocktails": 200,
+          "barDuration": 4,
           "priceMDL": 18600,
           "priceEUR": 930,
           "cocktails": [
@@ -82,6 +86,7 @@
         {
           "title": "MENIU 250 cocktailuri",
           "totalCocktails": 250,
+          "barDuration": 5,
           "priceMDL": 22750,
           "priceEUR": 1138,
           "cocktails": [
@@ -102,6 +107,7 @@
         {
           "title": "MENIU 300 cocktailuri",
           "totalCocktails": 300,
+          "barDuration": 5,
           "priceMDL": 28500,
           "priceEUR": 1425,
           "cocktails": [
@@ -128,6 +134,7 @@
         {
           "title": "MENIU 330 cocktailuri",
           "totalCocktails": 330,
+          "barDuration": 6,
           "priceMDL": 31350,
           "priceEUR": 1568,
           "cocktails": [
@@ -148,6 +155,7 @@
         {
           "title": "MENIU 370 cocktailuri",
           "totalCocktails": 370,
+          "barDuration": 6,
           "priceMDL": 35200,
           "priceEUR": 1758,
           "cocktails": [
@@ -168,6 +176,7 @@
         {
           "title": "MENIU 400 cocktailuri",
           "totalCocktails": 400,
+          "barDuration": 6,
           "priceMDL": 38000,
           "priceEUR": 1900,
           "cocktails": [
@@ -194,6 +203,7 @@
         {
           "title": "MENIU 430 cocktailuri",
           "totalCocktails": 430,
+          "barDuration": 6.5,
           "priceMDL": 40850,
           "priceEUR": 2043,
           "cocktails": [
@@ -214,6 +224,7 @@
         {
           "title": "MENIU 470 cocktailuri",
           "totalCocktails": 470,
+          "barDuration": 6.5,
           "priceMDL": 44650,
           "priceEUR": 2233,
           "cocktails": [
@@ -241,6 +252,7 @@
         {
           "title": "MENIU EXCLUSIV 500 cocktailuri",
           "totalCocktails": 500,
+          "barDuration": 6.5,
           "priceMDL": 47500,
           "priceEUR": 2375,
           "cocktails": [
@@ -262,6 +274,7 @@
         {
           "title": "MENIU EXCLUSIV 1000 cocktailuri",
           "totalCocktails": 1000,
+          "barDuration": 6.5,
           "priceMDL": 95000,
           "priceEUR": 4750,
           "cocktails": [
@@ -289,6 +302,7 @@
         {
           "title": "Tort 100 shot-uri",
           "totalCocktails": 100,
+          "barDuration": null,
           "priceMDL": 7000,
           "priceEUR": 350,
           "cocktails": [
@@ -302,6 +316,7 @@
         {
           "title": "Tort 150 shot-uri",
           "totalCocktails": 150,
+          "barDuration": null,
           "priceMDL": 10500,
           "priceEUR": 525,
           "cocktails": [
@@ -315,6 +330,7 @@
         {
           "title": "Tort 200 shot-uri",
           "totalCocktails": 200,
+          "barDuration": null,
           "priceMDL": 14000,
           "priceEUR": 700,
           "cocktails": [
@@ -328,6 +344,7 @@
         {
           "title": "Tort 250 shot-uri",
           "totalCocktails": 250,
+          "barDuration": null,
           "priceMDL": 17500,
           "priceEUR": 875,
           "cocktails": [
@@ -341,6 +358,7 @@
         {
           "title": "Tort 300 shot-uri",
           "totalCocktails": 300,
+          "barDuration": null,
           "priceMDL": 21000,
           "priceEUR": 1050,
           "cocktails": [

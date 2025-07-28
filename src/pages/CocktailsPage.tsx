@@ -47,7 +47,7 @@ export function CocktailsPage() {
                     <div className="space-y-12">
                     {Object.entries(groupedCocktails).map(([category, cocktails]) => (
                         <div key={category}>
-                        <h2 className="text-2xl font-bold text-sky-300 mb-6 text-center">
+                        <h2 className={`text-2xl font-bold mb-6 text-center w-full sm:w-[200px] rounded-lg p-1 ${getCategoryColor(category)}`}>
                             {category} ({cocktails.length})
                         </h2>
                         
@@ -55,7 +55,7 @@ export function CocktailsPage() {
                             {cocktails.map((cocktail, index) => (
                             <div 
                                 key={`${category}-${index}`}
-                                className={`rounded-xl border p-4 backdrop-blur-sm bg-white/5 hover:bg-white/10 transition-all duration-300 ${getCategoryColor(category)}`}
+                                className={`rounded-xl p-4 backdrop-blur-sm bg-white/5 hover:bg-white/10 transition-all duration-300 ${getCategoryColor(category)}`}
                             >
                                 {/* Large 370x370 Cocktail Image */}
                                 <div className="flex justify-center mb-4">
@@ -76,7 +76,7 @@ export function CocktailsPage() {
 
                                 {/* Ingredients */}
                                 <div className="space-y-2">
-                                <h4 className="text-sm font-semibold text-sky-300 text-center mb-2">Ingrediente:</h4>
+                                <h4 className="text-sm font-semibold text-white text-center mb-2">Ingrediente:</h4>
                                 <ul className="space-y-1">
                                     {cocktail.ingredients.map((ingredient, idx) => (
                                     <li key={idx} className="text-sm text-gray-300 flex items-center">
