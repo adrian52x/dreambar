@@ -71,7 +71,7 @@ export const cocktailsData: CocktailData[] = [
     category: "MOCKTAILS",
     ingredients: ["Suc de lychee", "Piure de fructul pasiunii", "Suc de lămâie", "Apă de nucă de cocos"],
     description: "Paradis tropical într-un pahar cu lychee dulce și fructul pasiunii",
-    image: "exotic_lychee.jpg"
+    image: "exotic_lychee.png"
   },
 
   // SHOTS
@@ -108,6 +108,6 @@ export const cocktailsData: CocktailData[] = [
     category: "SHOTS",
     ingredients: ["Vodcă", "Blue curaçao", "Suc de lămâie", "Triple sec"],
     description: "Shot albastru îndrăzneț cu un gust citric",
-    image: "kamikaze.jpeg"
+    image: "kamikaze.png"
   }
 ];
