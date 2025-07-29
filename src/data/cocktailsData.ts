@@ -20,7 +20,7 @@ export const cocktailsData: CocktailData[] = [
     category: "COCKTAILS",
     ingredients: ["Vodcă", "Lichior de piersici", "Suc de afine", "Suc de lămâie", "Zahăr pe margine"],
     description: "Cocktail dulce și fructat cu un final de bomboane",
-    image: "candy_lady.png"
+    image: "candy_lady.jpg"
   },
   {
     name: "ANGEL'S KISS",
@@ -34,7 +34,7 @@ export const cocktailsData: CocktailData[] = [
     category: "COCKTAILS",
     ingredients: ["Rom alb", "Blue curaçao", "Cremă de nucă de cocos", "Suc de ananas", "Lămâie"],
     description: "Cocktail tropical albastru care te transportă pe plajele din Havana",
-    image: "Havana.png"
+    image: "blue_dream.png"
   },
   {
     name: "PORNSTAR MARTINI",

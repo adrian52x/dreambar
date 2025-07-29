@@ -6,7 +6,7 @@ interface BarAndCabinaPackage {
     title: string;
     cabinaDuration: string;
     totalCocktails: number;
-    barDuration: number;
+    barDuration: string;
     priceEUR: number;
 }
 
@@ -43,7 +43,9 @@ export function BarAndCabinaCard({ pkg }: BarAndCabinaCardProps) {
                         <Instagram size={18} className="text-blue-400" />
                         <span className="text-sm font-medium text-blue-300">Cabina Foto</span>
                     </div>
-                    <span className="text-sm font-bold text-white">{pkg.cabinaDuration}</span>
+                    <div className="text-right">
+                        <div className="text-sm font-bold text-white">{pkg.cabinaDuration}</div>
+                    </div>
                 </div>
 
                 {/* Bar cocktails */}
@@ -53,7 +55,7 @@ export function BarAndCabinaCard({ pkg }: BarAndCabinaCardProps) {
                         <span className="text-sm font-medium text-orange-300">Bar Mobil</span>
                     </div>
                     <div className="text-right">
-                        <div className="text-sm font-bold text-white">{pkg.barDuration} ore</div>
+                        <div className="text-sm font-bold text-white">{pkg.barDuration}</div>
                         <div className="text-sm font-semibold text-orange-300">{pkg.totalCocktails} cocktailuri</div>
                     </div>
                 </div>
