@@ -109,7 +109,7 @@ const PriceCard = memo(function PriceCard({ title, totalCocktails, barDuration, 
     return (
         <Drawer>
             <DrawerTrigger asChild>
-                <div className="flex flex-col border-t-2 border-b-2 border-sky-400 rounded-lg p-6 hover:bg-sky-400/10 transition-colors cursor-pointer bg-white/5 backdrop-blur-sm will-change-transform">
+                <div className="flex flex-col border-t-2 border-b-2 border-sky-400 rounded-lg p-6 hover:bg-sky-400/10 transition-colors cursor-pointer bg-white/5 backdrop-blur-sm will-change-transform relative">
                     {/* Header */}
                     <div className="text-center mb-4">
                         <div className="text-xs font-semibold text-sky-300 uppercase tracking-wide mb-2">
@@ -163,6 +163,14 @@ const PriceCard = memo(function PriceCard({ title, totalCocktails, barDuration, 
                         <div className="text-xs text-gray-400 uppercase tracking-wide">
                             Preț total pachet
                         </div>
+                    </div>
+
+                    {/* Visual indicator for more details */}
+                    <div className="absolute bg-sky-400/10 pr-2 pl-1 py-1 rounded-lg bottom-3 right-1 flex items-center gap-1 pointer-events-none select-none">
+                        <svg className="w-4 h-4 text-sky-400 animate-bounce" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+                        </svg>
+                        <span className="text-sky-400 text-xs font-semibold">Detalii</span>
                     </div>
                 </div>
             </DrawerTrigger>
