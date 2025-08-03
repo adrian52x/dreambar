@@ -1,28 +1,8 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
-import { cocktailsData } from "../data/cocktailsData";
-
-const getCategoryColor = (category: string) => {
-  switch (category) {
-    case 'COCKTAILS':
-      return 'bg-red-500/20 text-red-300 border-red-400';
-    case 'MOCKTAILS':
-      return 'bg-blue-500/20 text-blue-300 border-blue-400';
-    case 'SHOTS':
-      return 'bg-orange-500/20 text-orange-300 border-orange-400';
-    default:
-      return 'bg-gray-500/20 text-gray-300 border-gray-400';
-  }
-};
+import { newCocktailsData } from "../data/cocktailsData";
 
 export function CocktailsPage() {
-  const groupedCocktails = cocktailsData.reduce((acc, cocktail) => {
-    if (!acc[cocktail.category]) {
-      acc[cocktail.category] = [];
-    }
-    acc[cocktail.category].push(cocktail);
-    return acc;
-  }, {} as Record<string, typeof cocktailsData>);
 
     return (
         <div className="bg-neutral-900">
@@ -30,82 +10,56 @@ export function CocktailsPage() {
                 <div className="container mx-auto px-4 py-8">
                     {/* Header */}
                     <div className="flex items-center gap-4 mb-8">
-                    <Link 
-                        to="/" 
-                        className="flex items-center gap-2 text-sky-400 hover:text-sky-300 transition-colors"
-                        onClick={() => window.scrollTo(0, 0)}
-                    >
-                        <ArrowLeft size={24} />
-                        <span>Înapoi</span>
-                    </Link>
-                    <h1 className="text-3xl md:text-4xl font-bold text-white">
-                        Toate <span className="text-sky-400">Cocktailurile</span>
-                    </h1>
+                        <Link 
+                            to="/" 
+                            className="flex items-center gap-2 text-sky-400 hover:text-sky-300 transition-colors"
+                            onClick={() => window.scrollTo(0, 0)}
+                        >
+                            <ArrowLeft size={24} />
+                            <span>Înapoi</span>
+                        </Link>
+                        <h1 className="text-3xl md:text-4xl font-bold text-white">
+                            Toate Cocktailurile
+                        </h1>
                     </div>
 
-                    {/* Cocktails Grid */}
-                    <div className="space-y-12">
-                    {Object.entries(groupedCocktails).map(([category, cocktails]) => (
-                        <div key={category}>
-                        <h2 className={`text-2xl font-bold mb-6 text-center w-full sm:w-[200px] rounded-lg p-1 ${getCategoryColor(category)}`}>
-                            {category} ({cocktails.length})
-                        </h2>
-                        
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                            {cocktails.map((cocktail, index) => (
+                    {/* Categories Grid */}
+                    <div className="grid grid-cols-1 gap-8 max-w-6xl mx-auto">
+                        {newCocktailsData.map((item, index) => (
                             <div 
-                                key={`${category}-${index}`}
-                                className={`rounded-xl p-4 backdrop-blur-sm bg-white/5 hover:bg-white/10 transition-all duration-300 ${getCategoryColor(category)}`}
+                                key={index}
+                                className="text-center space-y-6"
                             >
-                                {/* Large 370x370 Cocktail Image */}
-                                <div className="flex justify-center mb-4">
-                                <div className="w-[370px] h-[370px] rounded-xl flex items-center justify-center shadow-lg">
+                                {/* Category Name */}
+                                <h2 className="text-2xl md:text-3xl font-bold text-white">
+                                    {item.category}
+                                </h2>
+                                
+                                {/* Category Image */}
+                                <div className="rounded-xl overflow-hidden shadow-lg">
                                     <img 
-                                    src={`/images/cocktails/${cocktail.image}`}
-                                    alt={cocktail.name}
-                                    className="w-full h-full object-contain rounded-xl"
+                                        src={`/images/cocktails/grouped/${item.image}`}
+                                        alt={item.category}
+                                        className="w-full h-auto object-cover"
                                     />
-        
-                                </div>
-                                </div>
-
-                                {/* Cocktail Name */}
-                                <h3 className="text-xl font-bold text-center mb-3">
-                                {cocktail.name}
-                                </h3>
-
-                                {/* Ingredients */}
-                                <div className="space-y-2">
-                                <h4 className="text-sm font-semibold text-white text-center mb-2">Ingrediente:</h4>
-                                <ul className="space-y-1">
-                                    {cocktail.ingredients.map((ingredient, idx) => (
-                                    <li key={idx} className="text-sm text-gray-300 flex items-center">
-                                        <span className="w-2 h-2 bg-sky-400 rounded-full mr-2 flex-shrink-0"></span>
-                                        {ingredient}
-                                    </li>
-                                    ))}
-                                </ul>
                                 </div>
                             </div>
-                            ))}
-                        </div>
-                        </div>
-                    ))}
+                        ))}
                     </div>
 
                     {/* Footer */}
                     <div className="mt-16 text-center">
-                    <p className="text-gray-400 mb-4">
-                        Toate cocktailurile sunt preparate fresh cu ingrediente premium
-                    </p>
-                    <Link 
-                        to="/" 
-                        className="inline-flex items-center gap-2 bg-sky-400 hover:bg-sky-500 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
-                        onClick={() => window.scrollTo(0, 0)}
-                    >
-                        <ArrowLeft size={20} />
-                        Înapoi la Meniu Principal
-                    </Link>
+                        <p className="text-gray-400 mb-4">
+                            Toate cocktailurile sunt preparate fresh cu ingrediente premium
+                        </p>
+                        <Link 
+                            to="/" 
+                            className="inline-flex items-center gap-2 bg-sky-400 hover:bg-sky-500 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                            onClick={() => window.scrollTo(0, 0)}
+                        >
+                            <ArrowLeft size={20} />
+                            Înapoi la Meniu Principal
+                        </Link>
                     </div>
                 </div>
             </div>

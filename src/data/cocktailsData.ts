@@ -6,6 +6,21 @@ export interface CocktailData {
   image: string;
 }
 
+export const newCocktailsData = [
+  {
+    category: 'COCKTAILS',
+    image: "all_cocktails.jpg",
+  },
+  {
+    category: 'MOCKTAILS',
+    image: "all_mocktails.jpg",
+  },
+  {
+    category: 'SHOTS',
+    image: "all_shots.jpg",
+  }
+]
+
 export const cocktailsData: CocktailData[] = [
   // COCKTAILS
   {
