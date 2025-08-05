@@ -24,13 +24,18 @@ const images = [
     alt: "Cabina Foto Sample 4",
     label: "4."
   },
+  {
+    src: "/images/cabinafoto/cabinafoto5.jpg",
+    alt: "Cabina Foto Sample 5",
+    label: "5."
+  },
 ];
 
 export function CabinaFotoShowcase() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
   return (
-    <div className="w-full max-w-4xl mx-auto mt-6 mb-4">
-      <div className="grid grid-cols-2 md:grid-cols-4 gap-6 px-4">
+    <div className="w-full max-w-6xl mx-auto mt-6 mb-4">
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-6 px-4">
         {images.map((img, idx) => (
           <Dialog key={img.src} open={openIdx === idx} onOpenChange={open => setOpenIdx(open ? idx : null)}>
             <DialogTrigger asChild>

@@ -138,10 +138,10 @@ const PriceCard = memo(function PriceCard({ title, totalCocktails, barDuration, 
                             </div>
                             
                             {/* Bar duration - 30% */}
-                            {!cake && barDuration && (
+                            {!cake && (
                                 <div className="flex-[0.3] text-center border-l border-sky-400/30 pl-3">
-                                    <div className="text-lg font-bold text-white mb-1">
-                                        {barDuration} ore
+                                    <div className={`font-bold text-white mb-1 ${barDuration === 0 ? 'text-xs leading-tight' : 'text-lg'}`}>
+                                        {barDuration === 0 ? "pe toata durata evenimentului" : `${barDuration} ore`}
                                     </div>
                                     <div className="text-xs text-sky-300 uppercase tracking-wide">
                                         Deservire

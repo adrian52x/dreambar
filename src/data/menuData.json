@@ -274,7 +274,7 @@
         {
           "title": "MENIU EXCLUSIV 1000 cocktailuri",
           "totalCocktails": 1000,
-          "barDuration": 6.5,
+          "barDuration": 0,
           "priceMDL": 95000,
           "priceEUR": 4750,
           "cocktails": [
