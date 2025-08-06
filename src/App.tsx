@@ -1,5 +1,6 @@
 import { Instagram } from "lucide-react";
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
+import { useSearchParams } from "react-router-dom";
 import { Button } from "./components/ui/button";
 import { TabContent } from "./components/TabContent";
 import { openDreambarWhatsApp } from "./lib/whatsapp";
@@ -8,16 +9,31 @@ import { TransportationCostDialog } from "./components/TransportationCostDialog"
 
 
 function App() {
+    const [searchParams, setSearchParams] = useSearchParams();
     const [activeTab, setActiveTab] = useState<'bar' | 'photo' | 'both'>('bar');
 
-    // Memoize tab handlers to prevent unnecessary re-renders
-    const handleBarTabClick = useCallback(() => setActiveTab('bar'), []);
-    const handlePhotoTabClick = useCallback(() => setActiveTab('photo'), []);
-    const handleBothTabClick = useCallback(() => setActiveTab('both'), []);
+    // Initialize tab from URL on component mount
+    useEffect(() => {
+        const tabParam = searchParams.get('tab');
+        if (tabParam === 'photo' || tabParam === 'both') {
+            setActiveTab(tabParam);
+        }
+    }, [searchParams]);
 
+    // Helper function to update both state and URL
+    const updateActiveTab = useCallback((tab: 'bar' | 'photo' | 'both') => {
+        setActiveTab(tab);
+        setSearchParams(tab === 'bar' ? {} : { tab });
+    }, [setSearchParams]);
+
+    // Memoize tab handlers to prevent unnecessary re-renders
+    const handleBarTabClick = useCallback(() => updateActiveTab('bar'), [updateActiveTab]);
+    const handlePhotoTabClick = useCallback(() => updateActiveTab('photo'), [updateActiveTab]);
+    const handleBothTabClick = useCallback(() => updateActiveTab('both'), [updateActiveTab]);
+    //relative min-h-screen bg-[radial-gradient(ellipse_80%_80%_at_50%_-10%,rgba(120,119,198,0.3),rgba(255,255,255,0))]
     return (
-        <div className="bg-neutral-900">
-            <div className="relative min-h-screen bg-[radial-gradient(ellipse_80%_80%_at_50%_-10%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+        <div className="bg-neutral-950">
+            <div>
                 {/* Hero Content */}
                 <div className="z-10 flex flex-col items-center py-4 pb-16">
                     <div className="max-w-3xl text-center">
@@ -25,11 +41,6 @@ function App() {
                             DREAM
                             <span className="text-sky-400">BAR</span>
                         </h1>
-                        {/* <p className="mx-auto mb-2 max-w-2xl text-lg text-slate-300">
-                            Demo text: Lore ipsum dolor sit amet, consectetur adipiscing elit.
-                            Demo text: Lore ipsum dolor sit amet, consectetur adipiscing elit.
-                        </p> */}
-
                     </div>
 
                     <div className="flex flex-col gap-2 w-[350px] md:w-[600px] md:flex-row md:gap-2">

@@ -2,7 +2,7 @@ import { PriceCard } from "./BarMobilCard";
 import menuData from "../data/menuData.json";
 import cabinaFotoData from "../data/cabinaFotoPackages.json";
 import comboData from "../data/comboPackages.json";
-import { File, Cake } from "lucide-react";
+import { File, Cake, Camera, Sparkles } from "lucide-react";
 import { Button } from "./ui/button";
 import { Link } from "react-router-dom";
 import { CabinaFotoCard } from "./CabinaFotoCard";
@@ -52,6 +52,23 @@ export function TabContent({ activeTab }: TabContentProps) {
             return (
                 <>
                     <CabinaFotoShowcase />
+                    <div className="flex justify-center mt-6 mb-4">
+                        <Link to="/galerie">
+                            <Button 
+                                variant="outline" 
+                                className="group relative overflow-hidden bg-transparent bg-white/5 hover:bg-sky-400/20 border-2 border-sky-400 hover:border-sky-300 text-white text-lg font-semibold px-8 py-4 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 hover:scale-105 backdrop-blur-sm"
+                            >
+                                <div className="absolute inset-0 bg-sky-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                <div className="relative flex items-center gap-3">
+                                    <Camera className="w-6 h-6 text-slate-300 group-hover:text-white transition-colors duration-300" />
+                                    <span className="text-slate-200 group-hover:text-white transition-colors duration-300">
+                                        Galeria SANAPSTORM
+                                    </span>
+                                    <Sparkles className="w-5 h-5 text-slate-400 group-hover:text-slate-200 transition-colors duration-300" />
+                                </div>
+                            </Button>
+                        </Link>
+                    </div>
                     <ExtraServiceGuestBook />
                     <div className="p-4 mt-8 w-full max-w-6xl mx-auto px-4 rounded-xl">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-6 text-white min-h-[200px]">

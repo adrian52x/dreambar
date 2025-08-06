@@ -1,12 +1,15 @@
 import { Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import { newCocktailsData } from "../data/cocktailsData";
+import { useEffect } from "react";
 
 export function CocktailsPage() {
-
+    // Scroll to top when component mounts
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, [])
     return (
-        <div className="bg-neutral-900">
-            <div className="relative min-h-screen bg-[radial-gradient(ellipse_80%_80%_at_50%_-10%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
+        <div className="bg-neutral-950">
                 <div className="container mx-auto px-4 py-8">
                     {/* Header */}
                     <div className="flex items-center gap-4 mb-8">
@@ -54,7 +57,7 @@ export function CocktailsPage() {
                         </p>
                         <Link 
                             to="/" 
-                            className="inline-flex items-center gap-2 bg-sky-400 hover:bg-sky-500 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                            className="inline-flex items-center gap-2 bg-sky-600 hover:bg-sky-500 text-white px-6 py-1 rounded-lg font-semibold transition-colors"
                             onClick={() => window.scrollTo(0, 0)}
                         >
                             <ArrowLeft size={20} />
@@ -63,6 +66,5 @@ export function CocktailsPage() {
                     </div>
                 </div>
             </div>
-        </div>
     );
 }
