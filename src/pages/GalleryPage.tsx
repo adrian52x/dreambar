@@ -43,6 +43,36 @@ const images = [
     src: "/images/galerie/galerie8.jpg",
     alt: "Foto Sample 8",
     label: "8."
+  },
+  {
+    src: "/images/galerie/galerie9.jpg",
+    alt: "Foto Sample 9",
+    label: "9."
+  },
+  {
+    src: "/images/galerie/galerie10.jpg",
+    alt: "Foto Sample 10",
+    label: "10."
+  },
+  {
+    src: "/images/galerie/galerie11.jpg",
+    alt: "Foto Sample 11",
+    label: "11."
+  },
+  {
+    src: "/images/galerie/galerie12.jpg",
+    alt: "Foto Sample 12",
+    label: "12."
+  },
+  {
+    src: "/images/galerie/galerie13.jpg",
+    alt: "Foto Sample 13",
+    label: "13."
+  },
+  {
+    src: "/images/galerie/galerie14.jpg",
+    alt: "Foto Sample 14",
+    label: "14."
   }
 
 ];
