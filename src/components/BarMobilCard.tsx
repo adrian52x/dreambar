@@ -109,7 +109,7 @@ const PriceCard = memo(function PriceCard({ title, totalCocktails, barDuration, 
     return (
         <Drawer>
             <DrawerTrigger asChild>
-                <div className="flex flex-col border-t-2 border-b-2 border-sky-400 rounded-lg p-6 hover:bg-sky-400/10 transition-colors cursor-pointer bg-white/5 backdrop-blur-sm will-change-transform relative">
+                <div className="flex flex-col min-w-[260px] border-t-2 border-b-2 border-sky-400 rounded-lg p-6 hover:bg-sky-400/10 transition-colors cursor-pointer bg-white/5 backdrop-blur-sm will-change-transform relative">
                     {/* Header */}
                     <div className="text-center mb-4">
                         <div className="text-xs font-semibold text-sky-300 uppercase tracking-wide mb-2">
