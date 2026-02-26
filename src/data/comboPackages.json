@@ -85,9 +85,9 @@
   },
   {
     "title": "Cabina foto (pe tot parcursul evenimentului) + bar (1000 cocktailuri)",
-    "cabinaDuration": "pe tot parcursul evenimentului",
+    "cabinaDuration": null,
     "totalCocktails": 1000,
-    "barDuration": "pe tot parcursul evenimentului",
+    "barDuration": null,
     "priceEUR": 5000
   }
 ]

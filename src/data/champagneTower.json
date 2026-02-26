@@ -1,0 +1,7 @@
+[
+  { "glasses": 30,  "priceEUR": 220 },
+  { "glasses": 50,  "priceEUR": 360 },
+  { "glasses": 70,  "priceEUR": 500 },
+  { "glasses": 90,  "priceEUR": 640 },
+  { "glasses": 120, "priceEUR": 850 }
+]

@@ -274,7 +274,7 @@
         {
           "title": "MENIU EXCLUSIV 1000 cocktailuri",
           "totalCocktails": 1000,
-          "barDuration": 0,
+          "barDuration": null,
           "priceMDL": 95000,
           "priceEUR": 4750,
           "cocktails": [
@@ -291,82 +291,6 @@
             { "name": "DREAM SHOT", "portions": 85 },
             { "name": "B52", "portions": 85 },
             { "name": "BLUE KAMIKAZE", "portions": 85 }
-          ]
-        }
-      ]
-    },
-    {
-      "category": "Tort din SHOT-URI",
-      "cake": true,
-      "packages": [
-        {
-          "title": "Tort 100 shot-uri",
-          "totalCocktails": 100,
-          "barDuration": null,
-          "priceMDL": 7000,
-          "priceEUR": 350,
-          "cocktails": [
-            { "name": "B52", "portions": null },
-            { "name": "HEROSHIMA", "portions": null },
-            { "name": "GREEN MEXICAN", "portions": null },
-            { "name": "DREAM SHOT", "portions": null },
-            { "name": "BLUE KAMIKAZE", "portions": null }
-          ]
-        },
-        {
-          "title": "Tort 150 shot-uri",
-          "totalCocktails": 150,
-          "barDuration": null,
-          "priceMDL": 10500,
-          "priceEUR": 525,
-          "cocktails": [
-            { "name": "B52", "portions": null },
-            { "name": "HEROSHIMA", "portions": null },
-            { "name": "GREEN MEXICAN", "portions": null },
-            { "name": "DREAM SHOT", "portions": null },
-            { "name": "BLUE KAMIKAZE", "portions": null }
-          ]
-        },
-        {
-          "title": "Tort 200 shot-uri",
-          "totalCocktails": 200,
-          "barDuration": null,
-          "priceMDL": 14000,
-          "priceEUR": 700,
-          "cocktails": [
-            { "name": "B52", "portions": null },
-            { "name": "HEROSHIMA", "portions": null },
-            { "name": "GREEN MEXICAN", "portions": null },
-            { "name": "DREAM SHOT", "portions": null },
-            { "name": "BLUE KAMIKAZE", "portions": null }
-          ]
-        },
-        {
-          "title": "Tort 250 shot-uri",
-          "totalCocktails": 250,
-          "barDuration": null,
-          "priceMDL": 17500,
-          "priceEUR": 875,
-          "cocktails": [
-            { "name": "B52", "portions": null },
-            { "name": "HEROSHIMA", "portions": null },
-            { "name": "GREEN MEXICAN", "portions": null },
-            { "name": "DREAM SHOT", "portions": null },
-            { "name": "BLUE KAMIKAZE", "portions": null }
-          ]
-        },
-        {
-          "title": "Tort 300 shot-uri",
-          "totalCocktails": 300,
-          "barDuration": null,
-          "priceMDL": 21000,
-          "priceEUR": 1050,
-          "cocktails": [
-            { "name": "B52", "portions": null },
-            { "name": "HEROSHIMA", "portions": null },
-            { "name": "GREEN MEXICAN", "portions": null },
-            { "name": "DREAM SHOT", "portions": null },
-            { "name": "BLUE KAMIKAZE", "portions": null }
           ]
         }
       ]

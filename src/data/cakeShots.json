@@ -1,0 +1,69 @@
+{
+    "packages": [
+        {
+            "title": "Tort 100 shot-uri",
+            "totalCocktails": 100,
+            "priceMDL": 7000,
+            "priceEUR": 350,
+            "cocktails": [
+            { "name": "B52", "portions": null },
+            { "name": "HEROSHIMA", "portions": null },
+            { "name": "GREEN MEXICAN", "portions": null },
+            { "name": "DREAM SHOT", "portions": null },
+            { "name": "BLUE KAMIKAZE", "portions": null }
+            ]
+        },
+        {
+            "title": "Tort 150 shot-uri",
+            "totalCocktails": 150,
+            "priceMDL": 10500,
+            "priceEUR": 525,
+            "cocktails": [
+            { "name": "B52", "portions": null },
+            { "name": "HEROSHIMA", "portions": null },
+            { "name": "GREEN MEXICAN", "portions": null },
+            { "name": "DREAM SHOT", "portions": null },
+            { "name": "BLUE KAMIKAZE", "portions": null }
+            ]
+        },
+        {
+            "title": "Tort 200 shot-uri",
+            "totalCocktails": 200,
+            "priceMDL": 14000,
+            "priceEUR": 700,
+            "cocktails": [
+            { "name": "B52", "portions": null },
+            { "name": "HEROSHIMA", "portions": null },
+            { "name": "GREEN MEXICAN", "portions": null },
+            { "name": "DREAM SHOT", "portions": null },
+            { "name": "BLUE KAMIKAZE", "portions": null }
+            ]
+        },
+        {
+            "title": "Tort 250 shot-uri",
+            "totalCocktails": 250,
+            "priceMDL": 17500,
+            "priceEUR": 875,
+            "cocktails": [
+            { "name": "B52", "portions": null },
+            { "name": "HEROSHIMA", "portions": null },
+            { "name": "GREEN MEXICAN", "portions": null },
+            { "name": "DREAM SHOT", "portions": null },
+            { "name": "BLUE KAMIKAZE", "portions": null }
+            ]
+        },
+        {
+            "title": "Tort 300 shot-uri",
+            "totalCocktails": 300,
+            "priceMDL": 21000,
+            "priceEUR": 1050,
+            "cocktails": [
+            { "name": "B52", "portions": null },
+            { "name": "HEROSHIMA", "portions": null },
+            { "name": "GREEN MEXICAN", "portions": null },
+            { "name": "DREAM SHOT", "portions": null },
+            { "name": "BLUE KAMIKAZE", "portions": null }
+            ]
+        }
+    ]
+}
