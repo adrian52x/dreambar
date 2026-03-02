@@ -4,7 +4,7 @@ import { GlowButton } from "./components/GlowButton";
 import { WhatsApp } from "./icons";
 import { openDreambarWhatsApp } from "./lib/whatsapp";
 
-const images = [1, 2, 3, 4, 5, 6, 7].map((n) => `/images/galerie/galerie${n}.jpg`);
+const images = [1, 2, 3, 4, 5, 6, 7].map((n) => `/images/galerie/front${n}.jpeg`);
 
 // Row 1: 3 cards
 const row1Config = [
@@ -18,7 +18,7 @@ const row2Config = [
     { src: images[3], tilt: "rotate-[5deg]",  heightPct: "h-[19vh]", widthPct: "w-[11vw] min-w-[82px] max-w-[185px]" },
     { src: images[4], tilt: "rotate-[-4deg]", heightPct: "h-[22vh]", widthPct: "w-[13vw] min-w-[97px] max-w-[210px]" },
     { src: images[5], tilt: "rotate-[3deg]",  heightPct: "h-[21vh]", widthPct: "w-[12vw] min-w-[90px] max-w-[205px]" },
-    { src: images[6], tilt: "rotate-[-5deg]", heightPct: "h-[19vh]", widthPct: "w-[11vw] min-w-[84px] max-w-[190px]" },
+    // { src: images[6], tilt: "rotate-[-5deg]", heightPct: "h-[19vh]", widthPct: "w-[11vw] min-w-[84px] max-w-[190px]" },
 ];
 
 function App() {
